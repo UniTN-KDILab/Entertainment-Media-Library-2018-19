@@ -1,0 +1,2741 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/tupin/ontologies/2018/10/MLO"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/tupin/ontologies/2018/10/MLO">
+    <Prefix name="" IRI="http://www.semanticweb.org/tupin/ontologies/2018/10/MLO#"/>
+    <Prefix name="MLO" IRI="http://www.semanticweb.org/tupin/ontologies/2018/10/MLO#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">Created by:
+Andrea Tupini
+Davide Corradini</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">This ontology was last edited on 16 Dec. 2018</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>1.0.0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="#Actor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Award"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BookSigning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CinematographicWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CinematographicWorkScript"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Collection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Concert"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Director"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Entity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Event"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Festival"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LiteraryWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MindProduct"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Movie"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MovieScreening"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MusicGroup"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MusicLyrics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MusicalAlbum"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MusicalWork"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Musician"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Novel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Producer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TVShow"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TVShowEpisode"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Writer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Context_Property"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Parthood_Property"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#actsIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#composes"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#directs"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasActor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAward"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComposer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCopyrightHolder"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasDirector"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasInspirationFrom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasItemMadeInIt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLocation"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPart"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPerformer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPlayer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasProducer"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasWriter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inspires"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isAwardedTo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isCopyrightHolderOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isMadeIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isPartOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#performsIn"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#plays"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#produces"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#showsMovie"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#translationOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#writes"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#cinematographicGenre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#eidrID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hyperlink"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isbnID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#isniID"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#literaryGenre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#musicGenre"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#numberOfSoldCopies"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#rating"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#releaseDate"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#storyPlot"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#wasGivenOn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Academy_Award_for_Best_Original_Score"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Elijah_Wood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Emily_Davis"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fabrizio_Falasca"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Fellowship_of_the_Ring_Movie_Script_Screenplay"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Giorgio_Faletti"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Howard_Shore"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Il_sorteggio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Insonnia"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#J._R._R._Tolkien"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#London_LOTR_Screening"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#London_ODEON_Cinema"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#London_Philharmonic_Orchestra"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lucca_Comics_pavilion"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#LyricsFor_The_Prophecy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#MG_Giorgio_Faletti"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#New_Line_Cinema"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Peter_Jackson"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Philippa_Boyens"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Pochi_inutili_nascondigli"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring_Soundtrack"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Lord_of_the_Rings"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Prophecy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#The_Shadow_of_the_Past"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tolkein"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#United_Kingdom"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#United_States"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Allen_&amp;_Unwin"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Book_Signing_at_Lucca_Comics_&amp;_Games"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#L’ULTIMO_GIORNO_DI_SOLE"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#POS"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#gloss"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#parent_synset_ID"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#synonyms"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty IRI="#synset_ID"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="#cinematographicGenre"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="#literaryGenre"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="#musicGenre"/>
+    </Declaration>
+    <Declaration>
+        <Datatype IRI="#rating"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Creative_Work"/>
+        <Class IRI="#MindProduct"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Entity_Type"/>
+        <Class IRI="#Entity"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Event"/>
+        <Class IRI="#Event"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Organization"/>
+        <Class IRI="#Organization"/>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Person"/>
+        <Class IRI="#Person"/>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Entity_Type"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isPartOf"/>
+            <Class IRI="#Collection"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actor"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Actor"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#actsIn"/>
+            <Class IRI="#CinematographicWork"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Award"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Award"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Name"/>
+            <Class IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#NLString"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Award"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isAwardedTo"/>
+            <ObjectUnionOf>
+                <Class IRI="#MindProduct"/>
+                <Class IRI="#Person"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BookSigning"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BookSigning"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasPerformer"/>
+            <Class IRI="#Writer"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CinematographicWork"/>
+        <Class IRI="#MindProduct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CinematographicWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPart"/>
+            <Class IRI="#CinematographicWorkScript"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CinematographicWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPart"/>
+            <Class IRI="#MusicalWork"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CinematographicWork"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Temporal_Information"/>
+            <Class IRI="http://www.w3.org/2006/time#Duration"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CinematographicWork"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasActor"/>
+            <Class IRI="#Actor"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CinematographicWork"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasDirector"/>
+            <Class IRI="#Director"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CinematographicWork"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasInspirationFrom"/>
+            <Class IRI="#LiteraryWork"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CinematographicWork"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#inspires"/>
+            <ObjectUnionOf>
+                <Class IRI="#LiteraryWork"/>
+                <Class IRI="#MusicalWork"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CinematographicWorkScript"/>
+        <Class IRI="#LiteraryWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CinematographicWorkScript"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isPartOf"/>
+            <Class IRI="#CinematographicWork"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Collection"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasPart"/>
+            <Class IRI="#Entity"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Concert"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Concert"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasPerformer"/>
+            <Class IRI="#MusicGroup"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Concert"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isPartOf"/>
+            <Class IRI="#Festival"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <Class IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Location"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Name"/>
+            <Class IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#NLString"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Country"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasItemMadeInIt"/>
+            <Class IRI="#MindProduct"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Director"/>
+        <Class IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Creator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Director"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Director"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#directs"/>
+            <Class IRI="#CinematographicWork"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Event"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Event"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasLocation"/>
+            <Class IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Location"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Festival"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Festival"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Name"/>
+            <Class IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#NLString"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Festival"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasPart"/>
+            <Class IRI="#Concert"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiteraryWork"/>
+        <Class IRI="#MindProduct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiteraryWork"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasInspirationFrom"/>
+            <Class IRI="#LiteraryWork"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiteraryWork"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasWriter"/>
+            <Class IRI="#Writer"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiteraryWork"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#inspires"/>
+            <ObjectUnionOf>
+                <Class IRI="#CinematographicWork"/>
+                <Class IRI="#LiteraryWork"/>
+            </ObjectUnionOf>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LiteraryWork"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#translationOf"/>
+            <Class IRI="#LiteraryWork"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MindProduct"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MindProduct"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCopyrightHolder"/>
+            <Class IRI="#Person"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MindProduct"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasCopyrightHolder"/>
+            <Class IRI="#Producer"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MindProduct"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasAward"/>
+            <Class IRI="#Award"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MindProduct"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasProducer"/>
+            <Class IRI="#Producer"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MindProduct"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isMadeIn"/>
+            <Class IRI="#Country"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Movie"/>
+        <Class IRI="#CinematographicWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MovieScreening"/>
+        <Class IRI="#Event"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MovieScreening"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#showsMovie"/>
+            <Class IRI="#Movie"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicGroup"/>
+        <Class IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Creator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicGroup"/>
+        <Class IRI="#Collection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicGroup"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#performsIn"/>
+            <Class IRI="#Concert"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicGroup"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#hasMember"/>
+            <Class IRI="#Musician"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicGroup"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#plays"/>
+            <Class IRI="#MusicalWork"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicLyrics"/>
+        <Class IRI="#LiteraryWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicLyrics"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isPartOf"/>
+            <Class IRI="#MusicalWork"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicalAlbum"/>
+        <Class IRI="#Collection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicalAlbum"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasPart"/>
+            <Class IRI="#MusicalWork"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicalWork"/>
+        <Class IRI="#MindProduct"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicalWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasPart"/>
+            <Class IRI="#MusicLyrics"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicalWork"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#isPartOf"/>
+            <Class IRI="#CinematographicWork"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicalWork"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Temporal_Information"/>
+            <Class IRI="http://www.w3.org/2006/time#Duration"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicalWork"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasComposer"/>
+            <Class IRI="#Musician"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicalWork"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasInspirationFrom"/>
+            <Class IRI="#LiteraryWork"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MusicalWork"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasPlayer"/>
+            <Class IRI="#MusicGroup"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Musician"/>
+        <Class IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Creator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Musician"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Musician"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#memberOf"/>
+            <Class IRI="#MusicGroup"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Musician"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#composes"/>
+            <Class IRI="#MusicalWork"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Novel"/>
+        <Class IRI="#LiteraryWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organization"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organization"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isCopyrightHolderOf"/>
+            <Class IRI="#MindProduct"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <Class IRI="#Entity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasAward"/>
+            <Class IRI="#Award"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Person"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isCopyrightHolderOf"/>
+            <Class IRI="#MindProduct"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Producer"/>
+        <Class IRI="#Organization"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Producer"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#produces"/>
+            <Class IRI="#MindProduct"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TVShow"/>
+        <Class IRI="#Collection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TVShow"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#hasPart"/>
+            <Class IRI="#TVShowEpisode"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TVShowEpisode"/>
+        <Class IRI="#CinematographicWork"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TVShowEpisode"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#isPartOf"/>
+            <Class IRI="#TVShow"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Writer"/>
+        <Class IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Creator"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Writer"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Writer"/>
+        <ObjectAllValuesFrom>
+            <ObjectProperty IRI="#writes"/>
+            <Class IRI="#LiteraryWork"/>
+        </ObjectAllValuesFrom>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Award"/>
+        <Class IRI="#BookSigning"/>
+        <Class IRI="#Concert"/>
+        <Class IRI="#Festival"/>
+        <Class IRI="#MovieScreening"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CinematographicWork"/>
+        <Class IRI="#LiteraryWork"/>
+        <Class IRI="#MusicalWork"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CinematographicWorkScript"/>
+        <Class IRI="#MusicLyrics"/>
+        <Class IRI="#Novel"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Country"/>
+        <Class IRI="#MindProduct"/>
+        <Class IRI="#Organization"/>
+        <Class IRI="#Person"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Movie"/>
+        <Class IRI="#TVShowEpisode"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Award"/>
+        <NamedIndividual IRI="#Academy_Award_for_Best_Original_Score"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Elijah_Wood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Elijah_Wood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Musician"/>
+        <NamedIndividual IRI="#Emily_Davis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Emily_Davis"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Musician"/>
+        <NamedIndividual IRI="#Fabrizio_Falasca"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Fabrizio_Falasca"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CinematographicWorkScript"/>
+        <NamedIndividual IRI="#Fellowship_of_the_Ring_Movie_Script_Screenplay"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Actor"/>
+        <NamedIndividual IRI="#Giorgio_Faletti"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Musician"/>
+        <NamedIndividual IRI="#Giorgio_Faletti"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Giorgio_Faletti"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Writer"/>
+        <NamedIndividual IRI="#Giorgio_Faletti"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Musician"/>
+        <NamedIndividual IRI="#Howard_Shore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Howard_Shore"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Movie"/>
+        <NamedIndividual IRI="#Il_sorteggio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MusicalWork"/>
+        <NamedIndividual IRI="#Insonnia"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#NLString"/>
+        <NamedIndividual IRI="#J._R._R._Tolkien"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MovieScreening"/>
+        <NamedIndividual IRI="#London_LOTR_Screening"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Location"/>
+        <NamedIndividual IRI="#London_ODEON_Cinema"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MusicGroup"/>
+        <NamedIndividual IRI="#London_Philharmonic_Orchestra"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Location"/>
+        <NamedIndividual IRI="#Lucca_Comics_pavilion"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MusicLyrics"/>
+        <NamedIndividual IRI="#LyricsFor_The_Prophecy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MusicGroup"/>
+        <NamedIndividual IRI="#MG_Giorgio_Faletti"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Producer"/>
+        <NamedIndividual IRI="#New_Line_Cinema"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Director"/>
+        <NamedIndividual IRI="#Peter_Jackson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Peter_Jackson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Writer"/>
+        <NamedIndividual IRI="#Peter_Jackson"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Philippa_Boyens"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Writer"/>
+        <NamedIndividual IRI="#Philippa_Boyens"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Novel"/>
+        <NamedIndividual IRI="#Pochi_inutili_nascondigli"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Movie"/>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MusicalAlbum"/>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring_Soundtrack"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Novel"/>
+        <NamedIndividual IRI="#The_Lord_of_the_Rings"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MusicalWork"/>
+        <NamedIndividual IRI="#The_Prophecy"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MusicalWork"/>
+        <NamedIndividual IRI="#The_Shadow_of_the_Past"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Person"/>
+        <NamedIndividual IRI="#Tolkein"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Writer"/>
+        <NamedIndividual IRI="#Tolkein"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#United_Kingdom"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Country"/>
+        <NamedIndividual IRI="#United_States"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Producer"/>
+        <NamedIndividual IRI="#Allen_&amp;_Unwin"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#BookSigning"/>
+        <NamedIndividual IRI="#Book_Signing_at_Lucca_Comics_&amp;_Games"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MusicalAlbum"/>
+        <NamedIndividual IRI="#L’ULTIMO_GIORNO_DI_SOLE"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isAwardedTo"/>
+        <NamedIndividual IRI="#Academy_Award_for_Best_Original_Score"/>
+        <NamedIndividual IRI="#Howard_Shore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#actsIn"/>
+        <NamedIndividual IRI="#Elijah_Wood"/>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#memberOf"/>
+        <NamedIndividual IRI="#Emily_Davis"/>
+        <NamedIndividual IRI="#London_Philharmonic_Orchestra"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#memberOf"/>
+        <NamedIndividual IRI="#Fabrizio_Falasca"/>
+        <NamedIndividual IRI="#London_Philharmonic_Orchestra"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWriter"/>
+        <NamedIndividual IRI="#Fellowship_of_the_Ring_Movie_Script_Screenplay"/>
+        <NamedIndividual IRI="#Peter_Jackson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#memberOf"/>
+        <NamedIndividual IRI="#Giorgio_Faletti"/>
+        <NamedIndividual IRI="#MG_Giorgio_Faletti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#actsIn"/>
+        <NamedIndividual IRI="#Giorgio_Faletti"/>
+        <NamedIndividual IRI="#Il_sorteggio"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCopyrightHolderOf"/>
+        <NamedIndividual IRI="#Giorgio_Faletti"/>
+        <NamedIndividual IRI="#Pochi_inutili_nascondigli"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#writes"/>
+        <NamedIndividual IRI="#Giorgio_Faletti"/>
+        <NamedIndividual IRI="#Pochi_inutili_nascondigli"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#composes"/>
+        <NamedIndividual IRI="#Howard_Shore"/>
+        <NamedIndividual IRI="#The_Prophecy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#Il_sorteggio"/>
+        <NamedIndividual IRI="#Giorgio_Faletti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComposer"/>
+        <NamedIndividual IRI="#Insonnia"/>
+        <NamedIndividual IRI="#Giorgio_Faletti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlayer"/>
+        <NamedIndividual IRI="#Insonnia"/>
+        <NamedIndividual IRI="#MG_Giorgio_Faletti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPartOf"/>
+        <NamedIndividual IRI="#Insonnia"/>
+        <NamedIndividual IRI="#L’ULTIMO_GIORNO_DI_SOLE"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#showsMovie"/>
+        <NamedIndividual IRI="#London_LOTR_Screening"/>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#hasMember"/>
+        <NamedIndividual IRI="#London_Philharmonic_Orchestra"/>
+        <NamedIndividual IRI="#Emily_Davis"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#hasMember"/>
+        <NamedIndividual IRI="#London_Philharmonic_Orchestra"/>
+        <NamedIndividual IRI="#Fabrizio_Falasca"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#plays"/>
+        <NamedIndividual IRI="#London_Philharmonic_Orchestra"/>
+        <NamedIndividual IRI="#The_Prophecy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#plays"/>
+        <NamedIndividual IRI="#London_Philharmonic_Orchestra"/>
+        <NamedIndividual IRI="#The_Shadow_of_the_Past"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCopyrightHolder"/>
+        <NamedIndividual IRI="#LyricsFor_The_Prophecy"/>
+        <NamedIndividual IRI="#Philippa_Boyens"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWriter"/>
+        <NamedIndividual IRI="#LyricsFor_The_Prophecy"/>
+        <NamedIndividual IRI="#Philippa_Boyens"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPartOf"/>
+        <NamedIndividual IRI="#LyricsFor_The_Prophecy"/>
+        <NamedIndividual IRI="#The_Prophecy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#hasMember"/>
+        <NamedIndividual IRI="#MG_Giorgio_Faletti"/>
+        <NamedIndividual IRI="#Giorgio_Faletti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#plays"/>
+        <NamedIndividual IRI="#MG_Giorgio_Faletti"/>
+        <NamedIndividual IRI="#Insonnia"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCopyrightHolderOf"/>
+        <NamedIndividual IRI="#New_Line_Cinema"/>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#directs"/>
+        <NamedIndividual IRI="#Peter_Jackson"/>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#writes"/>
+        <NamedIndividual IRI="#Peter_Jackson"/>
+        <NamedIndividual IRI="#Fellowship_of_the_Ring_Movie_Script_Screenplay"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#writes"/>
+        <NamedIndividual IRI="#Philippa_Boyens"/>
+        <NamedIndividual IRI="#LyricsFor_The_Prophecy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCopyrightHolder"/>
+        <NamedIndividual IRI="#Pochi_inutili_nascondigli"/>
+        <NamedIndividual IRI="#Giorgio_Faletti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWriter"/>
+        <NamedIndividual IRI="#Pochi_inutili_nascondigli"/>
+        <NamedIndividual IRI="#Giorgio_Faletti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasActor"/>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring"/>
+        <NamedIndividual IRI="#Elijah_Wood"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCopyrightHolder"/>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring"/>
+        <NamedIndividual IRI="#New_Line_Cinema"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCopyrightHolder"/>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring"/>
+        <NamedIndividual IRI="#Tolkein"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasDirector"/>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring"/>
+        <NamedIndividual IRI="#Peter_Jackson"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasInspirationFrom"/>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring"/>
+        <NamedIndividual IRI="#The_Lord_of_the_Rings"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isMadeIn"/>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring"/>
+        <NamedIndividual IRI="#United_Kingdom"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPart"/>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring_Soundtrack"/>
+        <NamedIndividual IRI="#The_Prophecy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPart"/>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring_Soundtrack"/>
+        <NamedIndividual IRI="#The_Shadow_of_the_Past"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCopyrightHolder"/>
+        <NamedIndividual IRI="#The_Lord_of_the_Rings"/>
+        <NamedIndividual IRI="#Tolkein"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasProducer"/>
+        <NamedIndividual IRI="#The_Lord_of_the_Rings"/>
+        <NamedIndividual IRI="#Allen_&amp;_Unwin"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasWriter"/>
+        <NamedIndividual IRI="#The_Lord_of_the_Rings"/>
+        <NamedIndividual IRI="#Tolkein"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#inspires"/>
+        <NamedIndividual IRI="#The_Lord_of_the_Rings"/>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComposer"/>
+        <NamedIndividual IRI="#The_Prophecy"/>
+        <NamedIndividual IRI="#Howard_Shore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCopyrightHolder"/>
+        <NamedIndividual IRI="#The_Prophecy"/>
+        <NamedIndividual IRI="#Howard_Shore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPart"/>
+        <NamedIndividual IRI="#The_Prophecy"/>
+        <NamedIndividual IRI="#LyricsFor_The_Prophecy"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlayer"/>
+        <NamedIndividual IRI="#The_Prophecy"/>
+        <NamedIndividual IRI="#London_Philharmonic_Orchestra"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isPartOf"/>
+        <NamedIndividual IRI="#The_Prophecy"/>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComposer"/>
+        <NamedIndividual IRI="#The_Shadow_of_the_Past"/>
+        <NamedIndividual IRI="#Howard_Shore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCopyrightHolder"/>
+        <NamedIndividual IRI="#The_Shadow_of_the_Past"/>
+        <NamedIndividual IRI="#Howard_Shore"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPlayer"/>
+        <NamedIndividual IRI="#The_Shadow_of_the_Past"/>
+        <NamedIndividual IRI="#London_Philharmonic_Orchestra"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Name"/>
+        <NamedIndividual IRI="#Tolkein"/>
+        <NamedIndividual IRI="#J._R._R._Tolkien"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCopyrightHolderOf"/>
+        <NamedIndividual IRI="#Tolkein"/>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCopyrightHolderOf"/>
+        <NamedIndividual IRI="#Tolkein"/>
+        <NamedIndividual IRI="#The_Lord_of_the_Rings"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#writes"/>
+        <NamedIndividual IRI="#Tolkein"/>
+        <NamedIndividual IRI="#The_Lord_of_the_Rings"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasItemMadeInIt"/>
+        <NamedIndividual IRI="#United_Kingdom"/>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#isCopyrightHolderOf"/>
+        <NamedIndividual IRI="#Allen_&amp;_Unwin"/>
+        <NamedIndividual IRI="#The_Lord_of_the_Rings"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasLocation"/>
+        <NamedIndividual IRI="#Book_Signing_at_Lucca_Comics_&amp;_Games"/>
+        <NamedIndividual IRI="#Lucca_Comics_pavilion"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPerformer"/>
+        <NamedIndividual IRI="#Book_Signing_at_Lucca_Comics_&amp;_Games"/>
+        <NamedIndividual IRI="#Giorgio_Faletti"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasPart"/>
+        <NamedIndividual IRI="#L’ULTIMO_GIORNO_DI_SOLE"/>
+        <NamedIndividual IRI="#Insonnia"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#wasGivenOn"/>
+        <NamedIndividual IRI="#Academy_Award_for_Best_Original_Score"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2002-03-24T01:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#eidrID"/>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring"/>
+        <Literal>10.5240/E030-107B-C08A-BF93-AC79-B</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#rating"/>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">9.4</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#releaseDate"/>
+        <NamedIndividual IRI="#The_Fellowship_of_the_Ring"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2001-12-10T00:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#numberOfSoldCopies"/>
+        <NamedIndividual IRI="#The_Lord_of_the_Rings"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#long">150000000</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty IRI="#releaseDate"/>
+        <NamedIndividual IRI="#The_Lord_of_the_Rings"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">1954-07-29T01:00:00</Literal>
+    </DataPropertyAssertion>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Context_Property"/>
+        <ObjectProperty IRI="#Context_Property"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Parthood_Property"/>
+        <ObjectProperty IRI="#Parthood_Property"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Relational_Property"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#hasPart"/>
+        <ObjectProperty IRI="#hasPart"/>
+    </EquivalentObjectProperties>
+    <EquivalentObjectProperties>
+        <ObjectProperty IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#partOf"/>
+        <ObjectProperty IRI="#isPartOf"/>
+    </EquivalentObjectProperties>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#actsIn"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#composes"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#directs"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasActor"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasAward"/>
+        <ObjectProperty IRI="#Context_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasComposer"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasCopyrightHolder"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasDirector"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasInspirationFrom"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasItemMadeInIt"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasLocation"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPart"/>
+        <ObjectProperty IRI="#Parthood_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPerformer"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasPlayer"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasProducer"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#hasWriter"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#inspires"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isAwardedTo"/>
+        <ObjectProperty IRI="#Context_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isCopyrightHolderOf"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isMadeIn"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#isPartOf"/>
+        <ObjectProperty IRI="#Parthood_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#performsIn"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#plays"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#produces"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#showsMovie"/>
+        <ObjectProperty IRI="#Parthood_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#translationOf"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#writes"/>
+        <ObjectProperty IRI="#Relational_Property"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#actsIn"/>
+        <ObjectProperty IRI="#hasActor"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#composes"/>
+        <ObjectProperty IRI="#hasComposer"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#directs"/>
+        <ObjectProperty IRI="#hasDirector"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasAward"/>
+        <ObjectProperty IRI="#isAwardedTo"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasCopyrightHolder"/>
+        <ObjectProperty IRI="#isCopyrightHolderOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasInspirationFrom"/>
+        <ObjectProperty IRI="#inspires"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasItemMadeInIt"/>
+        <ObjectProperty IRI="#isMadeIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPart"/>
+        <ObjectProperty IRI="#isPartOf"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPerformer"/>
+        <ObjectProperty IRI="#performsIn"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasPlayer"/>
+        <ObjectProperty IRI="#plays"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasProducer"/>
+        <ObjectProperty IRI="#produces"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#hasWriter"/>
+        <ObjectProperty IRI="#writes"/>
+    </InverseObjectProperties>
+    <SymmetricObjectProperty>
+        <ObjectProperty IRI="#translationOf"/>
+    </SymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#actsIn"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#composes"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#directs"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasActor"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasAward"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasComposer"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasDirector"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasInspirationFrom"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasItemMadeInIt"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasPerformer"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasPlayer"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasProducer"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#hasWriter"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#inspires"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isAwardedTo"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#isMadeIn"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#performsIn"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#plays"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#produces"/>
+    </AsymmetricObjectProperty>
+    <AsymmetricObjectProperty>
+        <ObjectProperty IRI="#writes"/>
+    </AsymmetricObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#actsIn"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#composes"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#directs"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasActor"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasAward"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasComposer"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasDirector"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasInspirationFrom"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasItemMadeInIt"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasPerformer"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasPlayer"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasProducer"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#hasWriter"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#inspires"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isAwardedTo"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#isMadeIn"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#performsIn"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#plays"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#produces"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#translationOf"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#writes"/>
+    </IrreflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#actsIn"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#composes"/>
+        <Class IRI="#Musician"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#directs"/>
+        <Class IRI="#Director"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasActor"/>
+        <Class IRI="#CinematographicWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAward"/>
+        <ObjectUnionOf>
+            <Class IRI="#MindProduct"/>
+            <Class IRI="#Person"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasComposer"/>
+        <Class IRI="#MusicalWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCopyrightHolder"/>
+        <Class IRI="#MindProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasDirector"/>
+        <Class IRI="#CinematographicWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasInspirationFrom"/>
+        <Class IRI="#MindProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasItemMadeInIt"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="#Event"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPart"/>
+        <ObjectUnionOf>
+            <Class IRI="#Collection"/>
+            <Class IRI="#MindProduct"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPerformer"/>
+        <ObjectUnionOf>
+            <Class IRI="#BookSigning"/>
+            <Class IRI="#Concert"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPlayer"/>
+        <Class IRI="#MusicalWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasProducer"/>
+        <Class IRI="#MindProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasWriter"/>
+        <Class IRI="#LiteraryWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#inspires"/>
+        <Class IRI="#MindProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isAwardedTo"/>
+        <Class IRI="#Award"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isCopyrightHolderOf"/>
+        <ObjectUnionOf>
+            <Class IRI="#Organization"/>
+            <Class IRI="#Person"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isMadeIn"/>
+        <Class IRI="#MindProduct"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isPartOf"/>
+        <ObjectUnionOf>
+            <Class IRI="#MindProduct"/>
+            <Class IRI="#Person"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#performsIn"/>
+        <ObjectUnionOf>
+            <Class IRI="#MusicGroup"/>
+            <Class IRI="#Writer"/>
+        </ObjectUnionOf>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#plays"/>
+        <Class IRI="#MusicGroup"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#produces"/>
+        <Class IRI="#Producer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#showsMovie"/>
+        <Class IRI="#MovieScreening"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#translationOf"/>
+        <Class IRI="#LiteraryWork"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#writes"/>
+        <Class IRI="#Writer"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#actsIn"/>
+        <Class IRI="#CinematographicWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#composes"/>
+        <Class IRI="#MusicalWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#directs"/>
+        <Class IRI="#CinematographicWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasActor"/>
+        <Class IRI="#Actor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAward"/>
+        <Class IRI="#Award"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComposer"/>
+        <Class IRI="#Musician"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCopyrightHolder"/>
+        <ObjectUnionOf>
+            <Class IRI="#Organization"/>
+            <Class IRI="#Person"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasDirector"/>
+        <Class IRI="#Director"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasInspirationFrom"/>
+        <Class IRI="#MindProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasItemMadeInIt"/>
+        <Class IRI="#MindProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLocation"/>
+        <Class IRI="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Location"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPart"/>
+        <ObjectUnionOf>
+            <Class IRI="#MindProduct"/>
+            <Class IRI="#Person"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPerformer"/>
+        <ObjectUnionOf>
+            <Class IRI="#MusicGroup"/>
+            <Class IRI="#Writer"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPlayer"/>
+        <Class IRI="#MusicGroup"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasProducer"/>
+        <Class IRI="#Producer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasWriter"/>
+        <Class IRI="#Writer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inspires"/>
+        <Class IRI="#MindProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isAwardedTo"/>
+        <ObjectUnionOf>
+            <Class IRI="#MindProduct"/>
+            <Class IRI="#Person"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isCopyrightHolderOf"/>
+        <Class IRI="#MindProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isMadeIn"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isPartOf"/>
+        <ObjectUnionOf>
+            <Class IRI="#Collection"/>
+            <Class IRI="#MindProduct"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#performsIn"/>
+        <ObjectUnionOf>
+            <Class IRI="#BookSigning"/>
+            <Class IRI="#Concert"/>
+        </ObjectUnionOf>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#plays"/>
+        <Class IRI="#MusicalWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#produces"/>
+        <Class IRI="#MindProduct"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#showsMovie"/>
+        <Class IRI="#Movie"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#translationOf"/>
+        <Class IRI="#LiteraryWork"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#writes"/>
+        <Class IRI="#LiteraryWork"/>
+    </ObjectPropertyRange>
+    <SubDataPropertyOf>
+        <DataProperty IRI="#cinematographicGenre"/>
+        <DataProperty abbreviatedIRI="owl:topDataProperty"/>
+    </SubDataPropertyOf>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#eidrID"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isbnID"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#isniID"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#releaseDate"/>
+    </FunctionalDataProperty>
+    <FunctionalDataProperty>
+        <DataProperty IRI="#storyPlot"/>
+    </FunctionalDataProperty>
+    <DataPropertyDomain>
+        <DataProperty IRI="#eidrID"/>
+        <Class IRI="#CinematographicWork"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isbnID"/>
+        <Class IRI="#Novel"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#isniID"/>
+        <Class IRI="#MusicalWork"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#releaseDate"/>
+        <Class IRI="#MindProduct"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#wasGivenOn"/>
+        <Class IRI="#Award"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#numberOfSoldCopies"/>
+        <Datatype abbreviatedIRI="xsd:long"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#releaseDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#wasGivenOn"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#Actor</IRI>
+        <Literal xml:lang="en">09784701</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Actor</IRI>
+        <Literal>Appears in a CinematographicWork, pretends to be someone else, follows a CinematographicWorkScript.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#Award</IRI>
+        <Literal xml:lang="en">06709228</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Award</IRI>
+        <Literal>An award or recognition that can be given to either a Person or a MindProduct.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#POS"/>
+        <IRI>#BookSigning</IRI>
+        <Literal xml:lang="en">NOUN</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#gloss"/>
+        <IRI>#BookSigning</IRI>
+        <Literal xml:lang="en">Book signing is the affixing of a signature to the title page or flyleaf of a book by its author. Book signings are events, usually at a bookstore or library, where an author sits and signs books for a period of time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#parent_synset_ID"/>
+        <IRI>#BookSigning</IRI>
+        <Literal xml:lang="en">07461861</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#BookSigning</IRI>
+        <Literal xml:lang="en">signing, book autographing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#BookSigning</IRI>
+        <Literal xml:lang="en">-1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#POS"/>
+        <IRI>#CinematographicWork</IRI>
+        <Literal xml:lang="en">NOUN</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#gloss"/>
+        <IRI>#CinematographicWork</IRI>
+        <Literal xml:lang="en">Creative items composed of video and audio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#parent_synset_ID"/>
+        <IRI>#CinematographicWork</IRI>
+        <Literal xml:lang="en">04014270</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synonyms"/>
+        <IRI>#CinematographicWork</IRI>
+        <Literal xml:lang="en"></Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#CinematographicWork</IRI>
+        <Literal xml:lang="en">-1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CinematographicWork</IRI>
+        <Literal>Creative items composed of video and audio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#CinematographicWorkScript</IRI>
+        <Literal xml:lang="en">07023062</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#CinematographicWorkScript</IRI>
+        <Literal>The script for a CinematographicWork (movie of tv show) that dictates the actor&apos;s speech and behaviour.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#Collection</IRI>
+        <Literal xml:lang="en">07968050</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Collection</IRI>
+        <Literal>This describes entities that are composed of other entities.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#Concert</IRI>
+        <Literal xml:lang="en">06905814</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Concert</IRI>
+        <Literal>A concert, a performance done by a specific musical band.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#Country</IRI>
+        <Literal xml:lang="en">08185877</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Country</IRI>
+        <Literal>A country, in the geopolitical sense. It is used with the objective of identifying a location.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#Director</IRI>
+        <Literal xml:lang="en">10107969</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Director</IRI>
+        <Literal>Directs a CinematographicWork.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#Entity</IRI>
+        <Literal xml:lang="en">00001740</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Entity</IRI>
+        <Literal>Basic entity. Stands for a general thing.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#Event</IRI>
+        <Literal xml:lang="en">00029677</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Event</IRI>
+        <Literal>Basic event, something that occurs in a specific date and time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#Festival</IRI>
+        <Literal xml:lang="en">00518784</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Festival</IRI>
+        <Literal>Collection of concerts, which happens in a specific location and time.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#LiteraryWork</IRI>
+        <Literal xml:lang="en">06375736</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#LiteraryWork</IRI>
+        <Literal>Creative item that is composed exclusively of text.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#MindProduct</IRI>
+        <Literal xml:lang="en">03133774</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MindProduct</IRI>
+        <Literal>Everything that is the output of a creative process.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#Movie</IRI>
+        <Literal xml:lang="en">06627569</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Movie</IRI>
+        <Literal>A movie, is shown in cinemas, and is normally of greater length than TVShowEpisode.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#MovieScreening</IRI>
+        <Literal xml:lang="en">06901395</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MovieScreening</IRI>
+        <Literal>A show, where a specific movie is played.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#MusicGroup</IRI>
+        <Literal xml:lang="en">08263534</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MusicGroup</IRI>
+        <Literal>A group composed of musicians which create and perform MusicalWork.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#MusicLyrics</IRI>
+        <Literal xml:lang="en">07066015</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MusicLyrics</IRI>
+        <Literal>The text/words/lyrics of a song.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#MusicalAlbum</IRI>
+        <Literal xml:lang="en">06604096</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MusicalAlbum</IRI>
+        <Literal>A collection of MusicalWork items.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#MusicalWork</IRI>
+        <Literal xml:lang="en">07034009</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#MusicalWork</IRI>
+        <Literal>Creative item that is composed exclusively of audio.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#Musician</IRI>
+        <Literal xml:lang="en">10360025</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Musician</IRI>
+        <Literal>Is the composer and player of MusicalWork items.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#Novel</IRI>
+        <Literal xml:lang="en">06379324</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Novel</IRI>
+        <Literal>Contains a story, and is written/read with the purpose of entertaining.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#Organization</IRI>
+        <Literal xml:lang="en">08024893</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Organization</IRI>
+        <Literal>Unit constituted by members with common goals.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#Person</IRI>
+        <Literal xml:lang="en">00007846</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Person</IRI>
+        <Literal>A human being.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#Producer</IRI>
+        <Literal xml:lang="en">10499603</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Producer</IRI>
+        <Literal>Company that is in charge of publishing MindProduct items, making them available to other persons besides the creator.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#TVShow</IRI>
+        <Literal xml:lang="en">06633086</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TVShow</IRI>
+        <Literal>A collection of TVShowEpisode items.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#TVShowEpisode</IRI>
+        <Literal xml:lang="en">06634278</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#TVShowEpisode</IRI>
+        <Literal>A single episode from a TV show, is part of a TVShow.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#Writer</IRI>
+        <Literal xml:lang="en">10813654</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Writer</IRI>
+        <Literal>Is the creator of LiteraryWork items.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#actsIn</IRI>
+        <Literal xml:lang="en">01723161</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#actsIn</IRI>
+        <Literal>An Actor performs the act of acting in a CinematographicWork.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#cinematographicGenre</IRI>
+        <Literal>defines the possible genres for any CinematographicWork item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#composes</IRI>
+        <Literal xml:lang="en">01709353</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#composes</IRI>
+        <Literal>Musician composes a MusicalWork.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#directs</IRI>
+        <Literal xml:lang="en">01714176</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#directs</IRI>
+        <Literal>A Director directs a CinematographicWork item.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#eidrID</IRI>
+        <Literal>Universal ID to identify CinematographicWork items.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasActor</IRI>
+        <Literal xml:lang="en">09784701</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasActor</IRI>
+        <Literal>CinematographicWork has an Actor.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasAward</IRI>
+        <Literal xml:lang="en">13289169</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasAward</IRI>
+        <Literal xml:lang="en">A Person or MindProduct have an Award.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasComposer</IRI>
+        <Literal xml:lang="en">09966711</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasComposer</IRI>
+        <Literal>MusicalWork has a Musician as its composer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasCopyrightHolder</IRI>
+        <Literal xml:lang="en">06484839</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hasCopyrightHolder</IRI>
+        <Literal>The rights of a MindProduct item are held by a Person or Organization.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasDirector</IRI>
+        <Literal xml:lang="en">10107969</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasDirector</IRI>
+        <Literal>CinematographicWork has a Director.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasInspirationFrom</IRI>
+        <Literal xml:lang="en">05842891</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasInspirationFrom</IRI>
+        <Literal>Denotes that a MindProduct was inspired by another MindProduct.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasItemMadeInIt</IRI>
+        <Literal xml:lang="en">01643749</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasItemMadeInIt</IRI>
+        <Literal>A Country has a MindProduct made in it.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasLocation</IRI>
+        <Literal xml:lang="en">00027365</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasLocation</IRI>
+        <Literal>Specifies a location for a specific Entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasPart</IRI>
+        <Literal xml:lang="en">13831419</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasPart</IRI>
+        <Literal xml:lang="en">Entity is composed of another entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasPerformer</IRI>
+        <Literal xml:lang="en">10435383</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasPerformer</IRI>
+        <Literal>A Concert is performed by a MusicGroup.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasPlayer</IRI>
+        <Literal xml:lang="en">10360025</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasPlayer</IRI>
+        <Literal>A MusicalWork item has a player which is a Musician.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasProducer</IRI>
+        <Literal xml:lang="en">10499603</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasProducer</IRI>
+        <Literal>A MindProduct is produced by a Producer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasWriter</IRI>
+        <Literal xml:lang="en">10813654</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#hasWriter</IRI>
+        <Literal xml:lang="en">A LiteraryWork item is written by a Writer.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#hyperlink</IRI>
+        <Literal>a link is a hyperlink to an external resource regarding a specific MindProduct item. For example, a link to buy a Novel in an online store, or a link to the trailer of a Movie.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#inspires</IRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">01650224</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#inspires</IRI>
+        <Literal>Denotes that a MindProduct inspired the creation of another MindProduct.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#isAwardedTo</IRI>
+        <Literal xml:lang="en">02266695</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#isAwardedTo</IRI>
+        <Literal xml:lang="en">Award is given to a MindProduct or Person.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#isCopyrightHolderOf</IRI>
+        <Literal xml:lang="en">02244315</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isCopyrightHolderOf</IRI>
+        <Literal>A Person or an Organization have some rights over a MindProduct item.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#isMadeIn</IRI>
+        <Literal xml:lang="en">01643749</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#isMadeIn</IRI>
+        <Literal xml:lang="en">A MindProduct is made in a specific country.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#isPartOf</IRI>
+        <Literal xml:lang="en">13831419</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#isPartOf</IRI>
+        <Literal xml:lang="en">Entity is part of another Entity.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isbnID</IRI>
+        <Literal>Universal ID with which to identify Novels.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#isniID</IRI>
+        <Literal>Universal ID to identify MusicalWork items.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#literaryGenre</IRI>
+        <Literal>defines the possible genres for any LiteraryWork item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#musicGenre</IRI>
+        <Literal>defines the possible genres for any MusicalWork item</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#numberOfSoldCopies</IRI>
+        <Literal>defines the number of copies that have been sold of a specific MindProduct item (if applicable).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#performsIn</IRI>
+        <Literal xml:lang="en">01718067</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#performsIn</IRI>
+        <Literal>A MusicGroup performs in a Concert.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#plays</IRI>
+        <Literal xml:lang="en">01728928</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#plays</IRI>
+        <Literal>A Musician is the player of a MusicalWork item.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#produces</IRI>
+        <Literal xml:lang="en">02161530</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#produces</IRI>
+        <Literal>A Producer produces a MindProduct.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#rating</IRI>
+        <Literal>defines the average rating for any MindProduct. (During the data integration phase all the ratings from different sources should be normalized to this range)</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#releaseDate</IRI>
+        <Literal>the date and time at which a specific MindProduct item was released to the public.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#showsMovie</IRI>
+        <Literal xml:lang="en">02153218</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#showsMovie</IRI>
+        <Literal xml:lang="en">A MovieScreening event shows a specific Movie (because of this it is part of the event).</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#translationOf</IRI>
+        <Literal xml:lang="en">06548380</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#translationOf</IRI>
+        <Literal>A LiteraryWork item is the translation of another LiteraryWork item. This is a symmetric property, so if a literary work is a tranlation of another we also know that the inverse relation is true.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#wasGivenOn</IRI>
+        <Literal>the date in which an Award was given.</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#writes</IRI>
+        <Literal xml:lang="en">01702148</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="#synset_ID"/>
+        <IRI>#writes</IRI>
+        <Literal xml:lang="en">A Writer writes a LiteraryWork item.</Literal>
+    </AnnotationAssertion>
+    <DatatypeDefinition>
+        <Datatype IRI="#cinematographicGenre"/>
+        <DataOneOf>
+            <Literal>Action</Literal>
+            <Literal>Adventure</Literal>
+            <Literal>Animation</Literal>
+            <Literal>Biography</Literal>
+            <Literal>Comedy</Literal>
+            <Literal>Crime</Literal>
+            <Literal>Documentary</Literal>
+            <Literal>Drama</Literal>
+            <Literal>Family</Literal>
+            <Literal>Fantasy</Literal>
+            <Literal>Film Noir</Literal>
+            <Literal>History</Literal>
+            <Literal>Horror</Literal>
+            <Literal>Music</Literal>
+            <Literal>Musical</Literal>
+            <Literal>Mystery</Literal>
+            <Literal>Romance</Literal>
+            <Literal>Sci-Fi</Literal>
+            <Literal>Short</Literal>
+            <Literal>Sport</Literal>
+            <Literal>Superhero</Literal>
+            <Literal>Thriller</Literal>
+            <Literal>War</Literal>
+            <Literal>Western</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="#literaryGenre"/>
+        <DataOneOf>
+            <Literal>Action / Adventure</Literal>
+            <Literal>Anthology</Literal>
+            <Literal>Art</Literal>
+            <Literal>Autobiographies</Literal>
+            <Literal>Biographies</Literal>
+            <Literal>Children&apos;s</Literal>
+            <Literal>Comics</Literal>
+            <Literal>Cookbooks</Literal>
+            <Literal>Diaries</Literal>
+            <Literal>Dictionaries</Literal>
+            <Literal>Drama</Literal>
+            <Literal>Encyclopedias</Literal>
+            <Literal>Fantasy</Literal>
+            <Literal>Guide</Literal>
+            <Literal>Health</Literal>
+            <Literal>History</Literal>
+            <Literal>Horror</Literal>
+            <Literal>Journals</Literal>
+            <Literal>Math</Literal>
+            <Literal>Mystery</Literal>
+            <Literal>Poetry</Literal>
+            <Literal>Prayer books</Literal>
+            <Literal>Religion, Spirituality &amp; New Age</Literal>
+            <Literal>Romance</Literal>
+            <Literal>Satire</Literal>
+            <Literal>Science</Literal>
+            <Literal>Science fiction</Literal>
+            <Literal>Self help</Literal>
+            <Literal>Series</Literal>
+            <Literal>Travel</Literal>
+            <Literal>Trilogy</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="#musicGenre"/>
+        <DataOneOf>
+            <Literal>Blues</Literal>
+            <Literal>Classical</Literal>
+            <Literal>Country</Literal>
+            <Literal>Electronic</Literal>
+            <Literal>Folk</Literal>
+            <Literal>Hip-hop</Literal>
+            <Literal>Jazz</Literal>
+            <Literal>Reggae</Literal>
+            <Literal>Religious</Literal>
+            <Literal>Rock</Literal>
+            <Literal>Traditional</Literal>
+        </DataOneOf>
+    </DatatypeDefinition>
+    <DatatypeDefinition>
+        <Datatype IRI="#rating"/>
+        <DatatypeRestriction>
+            <Datatype abbreviatedIRI="owl:real"/>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#minInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2002/07/owl#real">0</Literal>
+            </FacetRestriction>
+            <FacetRestriction facet="http://www.w3.org/2001/XMLSchema#maxInclusive">
+                <Literal datatypeIRI="http://www.w3.org/2002/07/owl#real">10</Literal>
+            </FacetRestriction>
+        </DatatypeRestriction>
+    </DatatypeDefinition>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+

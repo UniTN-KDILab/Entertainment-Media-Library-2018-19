@@ -1,0 +1,1305 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#"
+     xml:base="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK"
+     xmlns:csk="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:terms="http://purl.org/dc/terms/">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK">
+        <rdfs:comment xml:lang="en">The purpose of the CSK is to provide a “minimum” ground of specifications for supporting semantic interoperability. These specifications will describe common-sense knowledge, depicting how the world is represented by people.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Action_Property -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Action_Property">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Descriptive_Property"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Action_Kind"/>
+        <rdfs:comment>What is used to indicate attributes of actions</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Biological_Property -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Biological_Property">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Object_Property"/>
+        <rdfs:comment>What is used to indicate biological attributes of objects</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Change_Property -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Change_Property">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Descriptive_Property"/>
+        <rdfs:comment>All the properties encoding a specific Action (e.g., the action “make” and the property “making”)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Chemical_Property -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Chemical_Property">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Object_Property"/>
+        <rdfs:comment>What is used to indicate chemical attributes of objects</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Context_Property -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Context_Property">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Descriptive_Property"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Context_Kind"/>
+        <rdfs:comment>What is used to indicate attributes of contexts</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Data_Property -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Data_Property">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Descriptive_Property"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Complex_Data_Type"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Date -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Date">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Temporal_Information"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#date"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#DateStamp -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#DateStamp">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Temporal_Information"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#date"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Descriptive_Property -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Descriptive_Property">
+        <rdfs:comment>What is used to indicate attributes for describing specific characteristic of something</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Function_Property -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Function_Property">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Descriptive_Property"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Function_Kind"/>
+        <rdfs:comment>What is used to indicate attributes of functions</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Name -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Entity_Type"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Name"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#NLString"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>A language unit by which a thing is known</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Object_Property -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Object_Property">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Descriptive_Property"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Object_Kind"/>
+        <rdfs:comment>What is used to indicate attributes of objects</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Parthood_Property -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Parthood_Property">
+        <rdfs:comment>What is used to indicate the relations of being a part</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Physical_Property -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Physical_Property">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Object_Property"/>
+        <rdfs:comment>What is used to indicate the physical attributes of objects</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Relational_Property -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Relational_Property">
+        <rdfs:comment>All the properties encoding a specific role (e.g., the role maker and the relation hasMaker)</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Spatial_Information -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Spatial_Information">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Spatial_Property"/>
+        <rdfs:comment>What is used to indicate spatial attributes of something</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Spatial_Property -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Spatial_Property">
+        <rdfs:comment>What is used to indicate spatial attributes and relationships of something</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Spatial_Relation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Spatial_Relation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Spatial_Property"/>
+        <rdfs:comment>What is used to indicate spatial relationship of something</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Temporal_Information -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Temporal_Information">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Temporal_Property"/>
+        <rdfs:comment>What is used to indicate temporal attributes of something</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Temporal_Property -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Temporal_Property">
+        <rdfs:comment>What is used to indicate temporal attributes and relationships of something</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Temporal_Relation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Temporal_Relation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Temporal_Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#above -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#above">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Spatial_Relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#acidity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#acidity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Chemical_Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#area -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#area">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Spatial_Information"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#citizenship -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#citizenship">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Function_Property"/>
+        <rdfs:comment>What is used to indicate the citizenship of someone</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#color -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#color">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Physical_Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#conceptID -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#conceptID">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Data_Property"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Concept"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#conceptID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#contact -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#contact">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Function_Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#eatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#eatedBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Change_Property"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#eating"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#eating -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#eating">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Change_Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#elevation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#elevation">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Spatial_Information"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#elevation"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#email -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#email">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Function_Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#endDate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#endDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Date"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#endDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#gender -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#gender">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Biological_Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#givenName -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#givenName">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Name"/>
+        <rdfs:comment>The part of the name which precedes the surname of a person</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#hasMember -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#hasMember">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Parthood_Property"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#memberOf"/>
+        <rdfs:comment>What is used to indicate the relations of having a member as part</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#hasPart">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Parthood_Property"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#partOf"/>
+        <rdfs:comment>What is used to indicate the relations of having a perdurant as a part</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#hasPhase -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#hasPhase">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Parthood_Property"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#phaseOf"/>
+        <rdfs:comment>What is used to indicate the relations of having an occurrent as a part</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#jobTitle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#jobTitle">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Function_Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#latitude -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#latitude">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Spatial_Information"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#latitude"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#lexicalItem -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#lexicalItem">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Data_Property"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#NLString"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#numericalValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#longitude -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#longitude">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Spatial_Information"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#longitude"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#madeBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#madeBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Change_Property"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#making"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#making -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#making">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Change_Property"/>
+        <rdfs:comment>The property encoding the act of making something</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#meltingPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#meltingPoint">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Chemical_Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#memberOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#memberOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Parthood_Property"/>
+        <rdfs:comment>What is used to indicate the relations of being a member</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#nationality -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#nationality">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Function_Property"/>
+        <rdfs:comment>What is used to indicate the nationality of someone</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#near -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#near">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Spatial_Relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#nickname -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#nickname">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#numericalValue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#numericalValue">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Data_Property"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#numericalValue"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#partOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#partOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Parthood_Property"/>
+        <rdfs:comment>What is used to indicate the relations of being a part of a perdurant</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#phaseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#phaseOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Parthood_Property"/>
+        <rdfs:comment>What is used to indicate the relations of being a part of an occurrent</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#position -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#position">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Spatial_Information"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#position"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Point"/>
+            </owl:Restriction>
+        </rdfs:range>
+        <rdfs:comment>What is used to indicate spatial attributes of something</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#shape -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#shape">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Physical_Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#source -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#source">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Action_Property"/>
+        <rdfs:comment>What is used to indicate the source of an action</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#startDate -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#startDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Date"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#startDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#surname -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#surname">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Name"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#target -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#target">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Action_Property"/>
+        <rdfs:comment>What is used to indicate the target of an action</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#telephoneNumber -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#telephoneNumber">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Function_Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#title -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#title">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Name"/>
+        <rdfs:comment>A language unit by which a creative work is known</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#toxicity -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#toxicity">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Chemical_Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#unitOfMeasure -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#unitOfMeasure">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Data_Property"/>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#unitOfMeasure"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Concept"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#weight -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#weight">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Physical_Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#after -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#after">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Temporal_Relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2006/time#before -->
+
+    <owl:ObjectProperty rdf:about="http://www.w3.org/2006/time#before">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Temporal_Relation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#conceptID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#conceptID"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#date">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#dateStamp -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#dateStamp">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTimeStamp"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#elevation -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#elevation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#endDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#endDate"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#latitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#latitude"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#longitude -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#longitude"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#numericalValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#numericalValue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#startDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#startDate"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Action_Kind -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Action_Kind">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Entity_Type"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Action_Property"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Complex_Data_Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An action represents how objects change in time</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Chemical_Stuff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Chemical_Stuff">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Object_Kind"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Chemical_Property"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Concept"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Matter or materials, simple or compounds, which can be described according to chemical properties or in relation to their amount or shape</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Complex_Data_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Complex_Data_Type">
+        <rdfs:comment>Datatypes derived by the composition of one or more basic datatypes</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Computer_File -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Computer_File">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Function_Kind"/>
+        <rdfs:comment>A computer file (a.k.a. Information Entity) is a block of arbitrary information or resource for storing information, which is available to a computer program and is usually based on some kind of durable storage. A file is durable in the sense that it remains available for programs to use after the current program has finished. Computer files can be considered as the modern counterpart of paper documents which traditionally were kept in offices’ and libraries’ files, which are the source of the term. However, differently from such artifacts, computer files have the possibility to be reproduced at almost zero cost (only the storage)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Concept -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Concept">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Lexical-Semantic_DataType"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#conceptID"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Data type used for returning a concept of the given semantic schema (i.e., data types used for handling representations of concepts)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Consumer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Consumer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Context_Kind -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Context_Kind">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Entity_Type"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Context_Property"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Complex_Data_Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A theory of the world which encodes an individual’s subjective perspective about</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Create -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Create">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Action_Kind"/>
+        <rdfs:comment>The action performed for conceiving something (i.e., an idea or a representation)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Creative_Work -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Creative_Work">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Function_Kind"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Relational_Property"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Creator"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The most generic kind of creative work, as mind product. Notice that here the focus is on the &quot;creative&quot; aspect of the work (not on the physical nature).</rdfs:comment>
+        <rdfs:comment>What is conceived or created</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Creator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Creator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Producer"/>
+        <rdfs:comment>Who perform the act of creating</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Destroy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Destroy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Action_Kind"/>
+        <rdfs:comment>The action by which an object “disappears” because losing its identity</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Destroyer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Destroyer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Consumer"/>
+        <rdfs:comment>Who perform the act of making</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Entity_Type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Entity_Type">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Name"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#NLString"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:comment>An entity is any object so important to be denoted with a name. For example, a person, a place or a document (indicated by its title)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Event -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Event">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Context_Kind"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#hasPhase"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#phaseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Event"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Something that happens at a given place and time</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Frequency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Frequency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Time_DataType"/>
+        <rdfs:comment>Data type used for handling the representation of frequency (twice, four times, etc.)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Function_Kind -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Function_Kind">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Entity_Type"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Function_Property"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Complex_Data_Type"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>What formalizes the behavior that something is expected to have</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#GeometryCollection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#GeometryCollection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Space_DataType"/>
+        <rdfs:comment>Data type used for handling the representation of a combination of point, line and surface data</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Lexical-Semantic_DataType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Lexical-Semantic_DataType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Complex_Data_Type"/>
+        <rdfs:comment>Data types for handling “lexical” and &quot;semantic&quot; information in various representations</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Line -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Line">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Space_DataType"/>
+        <rdfs:comment>Data type for handling the representation of one point in Space</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Living_Being -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Living_Being">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Object_Kind"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Biological_Property"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Concept"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>A living entity that that has (or can develop) the ability to act or function independently</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Location">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Function_Kind"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Spatial_Property"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Space_DataType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>It refers to spatial objects, i.e. entities occupying fixed regions of space (e.g., regions, cities, boundaries, parcels of land, water bodies, roads, buildings, bridges, etc.)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Make -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Make">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Action_Kind"/>
+        <rdfs:comment>The action performed for realizing something with physical properties</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Maker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Maker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Producer"/>
+        <rdfs:comment>Who perform the act of making</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#NLString -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#NLString">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Lexical-Semantic_DataType"/>
+        <rdfs:comment>Special string data types that map into lexical items</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Object_Kind -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Object_Kind">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Entity_Type"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Object_Property"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Complex_Data_Type"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>That which is perceived or known or inferred to have its own distinct existence (living or nonliving). An entity is any object so important to be denoted with a name. For example, a person, a place or a document (indicated by its title)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Organization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Organization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Function_Kind"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#hasMember"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Function_Kind"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#hasMember"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Object_Kind"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An organization is a unit constituted by members with common goals and formal rules. Organizations include corporations, companies, agencies, political parties and other groups defined by an established organizational structure</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Person">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Living_Being"/>
+        <rdfs:comment>A human being</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Physical_Stuff -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Physical_Stuff">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Object_Kind"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Physical_Property"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Concept"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Matter or materials, simple or compounds, which can be described according to chemical properties or in relation to their amount or shape</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Point -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Point">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Space_DataType"/>
+        <rdfs:comment>Data type for handling the representation of one point in Space</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Producer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Producer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Role"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Product -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Product">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Function_Kind"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Relational_Property"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Maker"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Anything that is generated by performing a “making” action</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Provider -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Provider">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Producer"/>
+        <rdfs:comment>Who perform the act of service providing</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#QQString -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#QQString">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Lexical-Semantic_DataType"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#unitOfMeasure"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Concept"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#numericalValue"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:comment>Datatypes used for quantifying or qualifying, examples of these datatypes are measures like weight or length, or rating (i.e., Data types used for handling representations of “qualitative” and “quantitative” information)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#RecurrenceRule -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#RecurrenceRule">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Time_DataType"/>
+        <rdfs:comment>Data type used for handling the representation of recurring events</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Role -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Role">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Function_Kind"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#endDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#startDate"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>An abstraction characterized by a set of behaviours, rights, obligations, and norms associated to a social situation</rdfs:comment>
+        <rdfs:comment>Represents additional information about a relationship or property between two entities. For example a Role can be used to say that a &apos;member&apos; role linking some SportsTeam to a player occurred during a particular time period. Or that a Person&apos;s &apos;actor&apos; role in a Movie was for some particular characterName. Such properties can be attached to a Role entity, which is then associated with the main entities using ordinary properties like &apos;member&apos; or &apos;actor&apos;.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#SString -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#SString">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Lexical-Semantic_DataType"/>
+        <rdfs:comment>TBD</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Serve -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Serve">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Action_Kind"/>
+        <rdfs:comment>The action by which any two objects may affect one another</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Service -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Service">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Function_Kind"/>
+        <rdfs:comment>Anything that is generated by performing a “providing” action</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Situation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Situation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Context_Kind"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Space_DataType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Space_DataType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#SpatioTemporal_DataType"/>
+        <rdfs:comment>Data types for handling Space in various representations</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#SpatioTemporal_DataType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#SpatioTemporal_DataType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Complex_Data_Type"/>
+        <rdfs:comment>Data types for handling Time and Space in various representations</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Surface -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Surface">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Space_DataType"/>
+        <rdfs:comment>Data type used for handling the representation of a spatial surface</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Time_DataType -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Time_DataType">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#SpatioTemporal_DataType"/>
+        <rdfs:comment>Data types for handling Time in various representations</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2006/time#Duration -->
+
+    <owl:Class rdf:about="http://www.w3.org/2006/time#Duration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#Time_DataType"/>
+        <rdfs:comment>Data types encoding duration in time (e.g., 2 months 10 days and 6 hours)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#endDate">
+        <rdfs:comment>What is used to indicate the moment in which something ends</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#latitude">
+        <rdfs:comment>The constant coordinate for the latitude (in WGS84 decimal format)</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#longitude">
+        <rdfs:comment>The constant coordinate for the longitude (in WGS84 decimal format)</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/mattiafumagalli/ontologies/2018/9/CSK#startDate">
+        <rdfs:comment>What is used to indicate the moment in which something starts</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.6.2018-09-06T00:27:41Z) https://github.com/owlcs/owlapi -->
+
